@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Cormorant Garamond", serif;
+    src: url('../fonts/CormorantGaramond-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Raleway", serif;
+    src: url('../fonts/Raleway-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1, h2, h3, p, ul, li, a, img, body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #181818;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+body {
+    background-color: #FFFAF3;
+    font-family: 'Raleway', serif;
+}
+.header {
+    margin-top: 39px;
+}
+.top__menu {
+    display: flex;
+    width: 81%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__link_logo:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar__list {
+    display: flex;
+    font-size: 18px;
+    width: 45%;
+    justify-content: flex-start;
+    gap: 66px;
+}
+.btn__reg {
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 1px solid #000000;
+    padding: 13px 26px 13px 26px;
+}
