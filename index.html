@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="top__menu">
-            <a href="#" class="navbar__link_logo"><img src="../svg/logo.svg" alt="Студия маникюра XNAILS"></a>
+            <a href="#" class="navbar__link_logo"><img src="./svg/logo.svg" alt="Студия маникюра XNAILS"></a>
             <ul class="navbar__list">
                 <a href="#" class="navbar__link"><li class="navbar__item">О нас</li></a>
                 <a href="#" class="navbar__link"><li class="navbar__item">Прайс</li></a>
@@ -22,9 +22,66 @@
         </div>
     </header>
     <main class="main">
-        <section class="main__banner">
-            
-        </section>
+        <div class="wrap__banner">
+            <section class="main__banner">
+                <h3 class="main__banner_title">XNAILS - студии маникюра в Санкт-Петербурге</h3>
+                <h1 class="main__banner_text">
+                    Мы знаем все о <span class="main__banner_text-upper">красивом</span> и <span class="main__banner_text-upper">качественном</span> покрытии
+                </h1>
+                <div class="main__banner__reg">
+                    <button class="btn__reg">записаться</button>
+                    <a href="#" class="main__banner__reg_price">Узнать стоимость</a>
+                </div>
+                <div class="main__banner__panel">
+                    <img class="main__banner__panel_img" src="./img/43228806_195615804565013_4157245782904378483_n.png" alt="Брови"></img>
+                    <img class="main__banner__panel_img" src="./img/248822676_619512206077676_6073995010241846907_n.png" alt="Маникюр"></img>
+                    <img class="main__banner__panel_img" src="./img/foot foto.png" alt="Педикюр"></img>
+                </div>
+                <img src="./img/main foto 1.png" alt="Фото нашего маникюра" class="main__banner_photo"></img>
+                <div class="main__banner__stat">
+                    <div class="main__banner__stat_box">
+                        <p class="main__banner_stat_numb">4</p>
+                        <p class="main__banner_stat_text">года  мы радуем наших клиентов</p>
+                    </div>
+                    <div class="main__banner__stat_box">
+                        <p class="main__banner_stat_numb">10 000+</p>
+                        <p class="main__banner_stat_text">маникюров мы сделали за последний год</p>
+                    </div>
+                    <div class="main__banner__stat_box">
+                        <p class="main__banner_stat_numb">3+</p>
+                        <p class="main__banner_stat_text">наши мастера имеют опыт более 3 лет</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="wrap__promo">
+            <section class="main__promo">
+                <div class="main__promo__container">
+                    <div class="main__promo__box">
+                        <p class="main__promo__containner__box_title">
+                            Вместе дешевле!
+                        </p>
+                        <p class="main__promo__containner__box_text">
+                            Расскажите о нас своим подругам, знакомым, коллегам или родственникам.
+                        </p>
+                        <p class="main__promo__containner__box_text">
+                            Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его первого визита
+                        </p>
+                        <a href="#" class="main__promo__container__box_link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="main__promo__radio-group">
+                    <div class="main__promo__radio-group_radiobtn">
+                        <input type="radio" id="radio-yes" class="promo-radio" name="radio" value="yes">
+                        <label class="promo-radio-title" for="radio-yes"></label>
+                    </div>
+                    <div class="main__promo__radio-group_radiobtn">
+                        <input type="radio" id="radio-no" class="promo-radio" name="radio" value="no">
+                        <label class="promo-radio-title" for="radio-no"></label>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     
 </body>
