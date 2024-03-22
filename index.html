@@ -55,32 +55,41 @@
             </section>
         </div>
         <div class="wrap__promo">
-            <section class="main__promo">
-                <div class="main__promo__container">
-                    <div class="main__promo__box">
-                        <p class="main__promo__containner__box_title">
-                            Вместе дешевле!
-                        </p>
-                        <p class="main__promo__containner__box_text">
-                            Расскажите о нас своим подругам, знакомым, коллегам или родственникам.
-                        </p>
-                        <p class="main__promo__containner__box_text">
-                            Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его первого визита
-                        </p>
-                        <a href="#" class="main__promo__container__box_link">Подробнее</a>
+            <div class="promo_slider">
+                <input type="radio" class="slider-input" name="respond" id="desktop" checked>
+                <div class="slider">
+                    <input class="slider-switch" type="radio" name="slider" id="switch1">
+                    <input class="slider-switch" type="radio" name="slider" id="switch2">
+                    <div class="slides">
+                        <div class="overflow">
+                            <div class="slides-box">
+                                <div class="slide-image-box">
+                                    <div class="slide-wrp">
+                                        <div class="slide"> 
+                                            <h1 class="slide-title">Вместе дешевле!</h1>
+                                            <p class="slide-text"> Расскажите о нас своим подругам, знакомым, коллегам или родственникам.</p>
+                                            <p class="slide-text">Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его первого визита</p>
+                                            <a href="#" class="slider-link">Подробнее</a>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="slide-image-box">
+                                    <div class="slide-wrp slide-wrp-img">
+                                        <div class="slide slide-white">
+                                            <h1 class="slide-title slide-title-white">Скидка 10% <br> на первый визит</h1>
+                                            <a href="#" class="slider-link slider-link-white">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="slider-active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
                     </div>
                 </div>
-                <div class="main__promo__radio-group">
-                    <div class="main__promo__radio-group_radiobtn">
-                        <input type="radio" id="radio-yes" class="promo-radio" name="radio" value="yes">
-                        <label class="promo-radio-title" for="radio-yes"></label>
-                    </div>
-                    <div class="main__promo__radio-group_radiobtn">
-                        <input type="radio" id="radio-no" class="promo-radio" name="radio" value="no">
-                        <label class="promo-radio-title" for="radio-no"></label>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
     </main>
     
