@@ -306,3 +306,117 @@ body {
 #switch2:checked ~ .slider-active label:nth-child(2)::before {
     background-image: url("../svg/Ellipse42.svg");
 }
+
+.wrap-services {
+    margin-bottom: 100px;
+}
+
+.services-title {
+    font-family: 'Cormorant Garamond';
+    font-weight: lighter;
+    font-size: 72px;
+    margin: 226px 0px 89px 0px;
+    text-align: center;
+}
+
+.services-tabs {
+    position: relative;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.tab-radio {
+    display: none;
+}
+
+.tab, .tab-title {
+    display: inline-block;
+}
+
+.tab-title {
+    font-family: 'Cormorant Garamond';
+    font-weight: lighter;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-right: 90px;
+    padding-right: 18px;
+}
+
+.tab-title:hover {
+    cursor: pointer;
+}
+
+.tab-radio:checked + .tab-title {
+    position: relative;
+    border-bottom: 2px solid #9DA57C;
+    padding-bottom: 18px;
+}
+
+.tab-content {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tab-radio:checked ~ .tab-content {
+    display: block;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    width: 59%;
+    margin-top: 19px;
+    margin-bottom: 61px;
+}
+
+.content-grid-row {
+    grid-column: 1;
+    margin-bottom: 10px;
+}
+
+.content-grid-col {
+    grid-column: 2;
+}
+
+.tab-img-top {
+    position: absolute;
+    top: 30px;
+    right: 106px;
+    z-index: 2;
+    width: 31%;
+}
+
+.tab-img {
+    position: absolute;
+    bottom: 227px;
+    right: 0;
+    z-index: 1;
+    width: 18%;
+}
+
+.tab-img-ext {
+    bottom: 114px;
+}
+
+.tab-img-foot-top {
+    top: -42px;
+    right: 29px;
+    width: 44%;
+}
+
+.tab-img-foot {
+    bottom: 79px;
+}
+
+.tab-img-brows-top {
+    top: -41px;
+    right: 25px;
+    width: 44%;
+}
+
+.tab-img-brows {
+    bottom: 190px;
+    right: 27px;
+}
