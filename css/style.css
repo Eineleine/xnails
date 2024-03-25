@@ -200,7 +200,7 @@ body {
     float: left;
 }
 
-.slide-img {
+.slide-wrp {
     background-image: url('../img/photo.png');
     background-position: center;
     background-size: cover;
@@ -309,6 +309,7 @@ body {
 
 .wrap-services {
     margin-bottom: 100px;
+    height: 805px;
 }
 
 .services-title {
@@ -338,7 +339,6 @@ body {
     font-size: 36px;
     text-transform: capitalize;
     margin-right: 90px;
-    padding-right: 18px;
 }
 
 .tab-title:hover {
@@ -451,7 +451,7 @@ body {
     float: left;
 }
 
-.galleery-slide-img {
+.gallery-slide-img {
     width: 100%;
 }
 
