@@ -309,6 +309,7 @@ body {
 
 .wrap-services {
     margin-bottom: 100px;
+    min-height: 805px;
 }
 
 .services-title {
@@ -444,39 +445,104 @@ body {
 .gallery-slides-box {
     width: 200%;
     transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .gallery-slide-image-box {
-    width: 50%;
+    width: 12%;
     float: left;
+    margin-right: 10px;
 }
 
-.galleery-slide-img {
+.gallery-slide-img {
     width: 100%;
 }
 
-#switch1:checked ~ .slides .slides-box{
+#gallery-switch1:checked ~ .gallery-slides .gallery-slides-box{
 	margin-left: 0;
 }
 
-#switch2:checked ~ .slides .slides-box{
+#gallery-switch2:checked ~ .gallery-slides .gallery-slides-box{
+	margin-left: -15%;
+}
+
+#gallery-switch3:checked ~ .gallery-slides .gallery-slides-box{
+	margin-left: -30%;
+}
+
+#gallery-switch4:checked ~ .gallery-slides .gallery-slides-box{
+	margin-left: -45%;
+}
+
+#gallery-switch5:checked ~ .gallery-slides .gallery-slides-box{
+	margin-left: -60%;
+}
+
+#gallery-switch6:checked ~ .gallery-slides .gallery-slides-box{
+	margin-left: -75%;
+}
+
+#gallery-switch7:checked ~ .gallery-slides .gallery-slides-box{
+	margin-left: -90%;
+}
+
+#gallery-switch8:checked ~ .gallery-slides .gallery-slides-box{
 	margin-left: -100%;
 }
 
-.slider-active {
+#gallery-switch1:checked ~ .gallery-slider-arrow label:nth-child(8), 
+#gallery-switch2:checked ~ .gallery-slider-arrow label:nth-child(1),
+#gallery-switch3:checked ~ .gallery-slider-arrow label:nth-child(2),
+#gallery-switch4:checked ~ .gallery-slider-arrow label:nth-child(3),
+#gallery-switch5:checked ~ .gallery-slider-arrow label:nth-child(4),
+#gallery-switch6:checked ~ .gallery-slider-arrow label:nth-child(5),
+#gallery-switch7:checked ~ .gallery-slider-arrow label:nth-child(6),
+#gallery-switch8:checked ~ .gallery-slider-arrow label:nth-child(7) {
+	background: url('../svg/Vector\ 2.svg') no-repeat; 
+	float: left;
+	margin: 0 0 0 -84px; 
+	display: block;
+	height: 68px;
+	width: 68px;
+    opacity: 0.5;
+}
+
+#gallery-switch1:checked ~ .gallery-slider-arrow label:nth-child(2), 
+#gallery-switch2:checked ~ .gallery-slider-arrow label:nth-child(3),
+#gallery-switch3:checked ~ .gallery-slider-arrow label:nth-child(4),
+#gallery-switch4:checked ~ .gallery-slider-arrow label:nth-child(5),
+#gallery-switch5:checked ~ .gallery-slider-arrow label:nth-child(6),
+#gallery-switch6:checked ~ .gallery-slider-arrow label:nth-child(7),
+#gallery-switch7:checked ~ .gallery-slider-arrow label:nth-child(8),
+#gallery-switch8:checked ~ .gallery-slider-arrow label:nth-child(1) {
+	background: url('../svg/Vector\ 1.svg') no-repeat; 
+	float: right;
+	margin: 0 -84px 0 0; 
+	display: block;
+	height: 68px;
+	width: 68px;
+    opacity: 0.5;
+}
+
+.gallery-slider-arrow label {
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+}
+
+.gallery-slider-active {
     margin-top: 43px;
 }
 
-.slider-active label {
+.gallery-slider-active label {
     display: inline-block;
     cursor: pointer;
     position: relative;
     user-select: none;
-    opacity: 0.5;
     padding: 2px;
 }
 
-.slider-active label::before {
+.gallery-slider-active label::before {
     content: '';
     display: inline-block;
     /* position: absolute; */
@@ -485,13 +551,13 @@ body {
     background-image: url('../svg/Ellipse41.svg');
 }
 
-#switch1:checked ~ .slider-active label:nth-child(1)::before,
-#switch2:checked ~ .slider-active label:nth-child(2)::before,
-#switch3:checked ~ .slider-active label:nth-child(3)::before,
-#switch4:checked ~ .slider-active label:nth-child(4)::before,
-#switch5:checked ~ .slider-active label:nth-child(5)::before,
-#switch6:checked ~ .slider-active label:nth-child(6)::before,
-#switch7:checked ~ .slider-active label:nth-child(7)::before,
-#switch8:checked ~ .slider-active label:nth-child(8)::before, {
+#gallery-switch1:checked ~ .gallery-slider-active label:nth-child(1)::before,
+#gallery-switch2:checked ~ .gallery-slider-active label:nth-child(2)::before,
+#gallery-switch3:checked ~ .gallery-slider-active label:nth-child(3)::before,
+#gallery-switch4:checked ~ .gallery-slider-active label:nth-child(4)::before,
+#gallery-switch5:checked ~ .gallery-slider-active label:nth-child(5)::before,
+#gallery-switch6:checked ~ .gallery-slider-active label:nth-child(6)::before,
+#gallery-switch7:checked ~ .gallery-slider-active label:nth-child(7)::before,
+#gallery-switch8:checked ~ .gallery-slider-active label:nth-child(8)::before {
     background-image: url("../svg/Ellipse42.svg");
 }
