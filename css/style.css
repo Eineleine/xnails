@@ -200,7 +200,7 @@ body {
     float: left;
 }
 
-.slide-img {
+.slide-wrp {
     background-image: url('../img/photo.png');
     background-position: center;
     background-size: cover;
@@ -339,7 +339,6 @@ body {
     font-size: 36px;
     text-transform: capitalize;
     margin-right: 90px;
-    padding-right: 18px;
 }
 
 .tab-title:hover {
